@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills and Interests</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            border: 2px solid rgb(145, 145, 255);
+        }
+        header {
+            width: 80vw;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 36px;
+            
+            border-radius: 50px;
+            padding: 16px 0;
+        }
+        .subtitle {
+            color: #555;
+            font-size: 1.1em;
+            margin-top: 8px;
+        }
+        h1 {
+            font-size: 2.4em;
+            margin-bottom: 8px;
+        }
+        .container {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            background: linear-gradient(135deg, #2a67d989 0%, #cfdef3 100%);
+            border:2px solid #2a67d9;
+            border-radius: 12px;
+            padding: 28px 32px;
+            box-shadow: 0 2px 16px rgba(44,62,80,0.10);
+            min-width: 300px;
+            max-width: 380px;
+            flex: 1 1 340px;
+            margin: 12px 0;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            animation: fadeInUp 0.8s;
+        }
+        .box:hover {
+            box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+            transform: scale(1.04);
+            transition: transform 0.22s cubic-bezier(.4,1.6,.4,1), box-shadow 0.22s;
+        }
+        .box {
+            transition: transform 0.22s cubic-bezier(.4,1.6,.4,1), box-shadow 0.22s;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 18px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 22px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box {
+                max-width: 90vw;
+            }
+        }
+        div a{
+            display: flex;
+            background: #12dc41;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 24px;
+            width: fit-content;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+            transition: background 0.2s, transform 0.2s;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skills and Interests</h1>
+        <p class="subtitle">Explore my skills and interests that shape my journey as a software developer.</p>
+    </header>
+    <main>
+        <div class="container">
+            <section class="box" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML &amp; CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Django Framework</li>
+                    <li>SQL &amp; NoSQL Databases</li>
+                </ul>
+            </section>
+            <section class="box" id="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Open Source Projects</li>
+                    <li>Software Engineering</li>
+                    <li>Learning New Technologies</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <a href="portfolio.html">⬅️ Back to Main Page</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    background: url('portfoilo.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+   
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    padding: 36px 0 0 0;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.site-title {
+    margin: 0 0 18px 0;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #222;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 28px;
+    color: #3366cc;
+    text-decoration: none;
+    font-size: 1.13em;
+    font-weight: 500;
+    border-radius: 30px;
+    background: #f3f6fa;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #3366cc;
+    color: #fff;
+    transform: translateY(-3px) scale(1.06);
+    box-shadow: 0 6px 24px rgba(51,102,204,0.13);
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+    background: #fff;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: block;
+    margin-bottom: 18px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.profile-img:hover {
+    box-shadow: 0 12px 48px #3366cc, 0 8px 32px rgba(51,102,204,0.18);
+    transform: scale(1.04) rotate(-2deg);
+}
+
+.profile-info {
+    background: #fff;
+    padding: 22px 32px;
+    border-radius: 18px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    max-width: 420px;
+    color: #222;
+    font-size: 1.18em;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+.profile-info strong {
+    color: #3366cc;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+footer {
+    background: #fff;
+    color: #3366cc;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 1.08em;
+    margin-top: auto;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 24px rgba(0,0,0,0.08);
+    border-radius: 24px 24px 0 0;
+}
+
+/* Subtle floating animation for image */
+@keyframes float {
+    0% { transform: translateY(0);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(0);}
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+    .site-title {
+        font-size: 1.5em;
+    }
+    .profile-img {
+        width: 90px;
+        height: 90px;
+        margin: 0;
+    }
+    .profile-info {
+        padding: 14px 10px;
+        font-size: 1em;
+        max-width: 95vw;
+    }
+    nav ul li a {
+        padding: 10px 14px;
+        font-size: 1em;
+    }
+}

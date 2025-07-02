@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f0f4f8 0%, #c9e7fa 100%);
+            margin: 0;
+            padding: 0;
+        }
+        .about {
+            max-width: 700px;
+            height: 1000px ;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+            padding: 40px 36px;
+            animation: fadeIn 1.2s;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            color: #0077b6;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .about h3 {
+            font-size: 1.5rem;
+            color: #009688;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .about p {
+            font-size: 1.15rem;
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        .highlight {
+            color: #009688;
+            font-weight: bold;
+        }
+        .about-list {
+            margin: 24px 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+        }
+        .about-list li {
+            background: #e0f7fa;
+            color: #006064;
+            padding: 10px 22px;
+            border-radius: 12px;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: background 0.3s;
+        }
+        .about-list li:hover {
+            background: #b2ebf2;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .about-footer {
+            text-align: center;
+            justify-content: center;
+           
+            
+            border-radius: 40px;
+            align-items: center;
+            display: flex;
+            margin-top: 28px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .about-footer:hover {
+            color: #0077b6;
+            border: 2px solid #b2ebf2;
+        }
+         .conatiner {
+            text-align: center;
+            margin-top: 16px;
+            
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s, transform 0.2s;
+        }
+        div a{
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+            transition: background 0.2s, transform 0.2s;
+            animation: pulse 1.5s infinite;
+        }
+        div a:hover {
+            background: #0366d6;
+            transform: scale(1.05);
+        }
+        footer {
+           display: inline-block;
+            background: rgb(44, 210, 89);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+            transition: background 0.2s, transform 0.2s;
+            animation: pulse 1.5s infinite;
+        }
+        footer a:hover {
+            background: #0366d6;
+            transform: scale(1.05);
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+<section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+        Hi, I'm <span class="highlight">Chandrasekhara Reddy</span>. I recently completed my <span class="highlight">Master of Computer Applications</span> from KBN College, Vijayawada. My journey has given me a strong foundation in programming, especially with <span class="highlight">Java</span> and <span class="highlight">Python</span>, and hands-on experience in <span class="highlight">web development</span> using <span class="highlight">Django</span>.
+        <br><br>
+        I earned an <span class="highlight">NPTEL certification</span> in Programming in Java, deepening my understanding of object-oriented concepts. My MCA project—a secure messaging app with graphical password authentication—helped me apply my skills in real-world scenarios.
+        <br><br>
+        Beyond academics, I played university games, building <span class="highlight">teamwork</span> and <span class="highlight">discipline</span>. As an <span class="highlight">NSS volunteer</span>, I contributed to community service, developing leadership and social responsibility.
+    </p>
+    <h3>Skills</h3>
+    <ul class="about-list">
+        <li>Java &amp; Python </li>
+        <li>Django Web Framework</li>
+        <li>SQL &amp; NoSQL Databases</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java Script</li>
+    </ul>
+  
+    <div class="conatiner">
+        <a href="project.html">View My Projects</a>
+    </div>
+    <div class="conatiner">
+        <a href="chanduresume.pdf" target="_blank">Download My Resume (PDF)</a>
+    </div>
+      
+    <div class="about-footer">
+        <em>Excited to start my career, apply my skills, and keep learning as a software developer!</em>
+    </div>
+    <footer class="about-footer">
+        <a href="portfolio.html">⬅️ Back to Main Page</a>
+    </footer>
+</section>
+</body>
+</html>
