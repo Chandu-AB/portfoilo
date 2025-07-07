@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - Chandu Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6fa;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        header {
+            background: #22223b;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(34,34,59,0.08);
+            padding: 32px 24px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #4a4e69;
+        }
+        .contact-details {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px 0;
+            text-align: left;
+        }
+        .contact-details li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        form label {
+            display: block;
+            margin: 18px 0 6px 0;
+            font-weight: 500;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #bfc0c0;
+            border-radius: 5px;
+            font-size: 1em;
+            background: #f7f7fb;
+            margin-bottom: 8px;
+            transition: border 0.2s;
+        }
+        form input:focus, form textarea:focus {
+            border-color: #4a4e69;
+            outline: none;
+        }
+        button[type="submit"] {
+            background: #4a4e69;
+            color: #fff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button[type="submit"]:hover {
+            background: #22223b;
+        
+        }
+        #id1{
+            display: flex;
+            background: #12dc41;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 24px;
+            width: fit-content;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 18px 0;
+            background: #22223b;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <p>Let's connect! Feel free to reach out using the details below or the form.</p>
+    </header>
+    <div class="container">
+        <h2>Contact Details</h2>
+        <ul class="contact-details">
+            <li><strong>Address:</strong> 1-87-7, Darsi, India</li>
+            <li><strong>Phone:</strong> 93906077319</li>
+            <li><strong>Email:</strong> chandrasekharareddyv55@gmail.com</li>
+        </ul>
+        <h2>Contact Form</h2>
+        <form action="https://formspree.io/f/mjvowzqk" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+     <div  id="id1">
+            <a href="portfolio.html">⬅️ Back to Main Page</a>
+             
+        </div>
+    <footer>
+        &copy; 2024 Chandu Portfolio. All rights reserved.
+    </footer>
+</body>
+</html>
